@@ -2,26 +2,24 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* Tokens on <html>: next-themes toggles .light/.dark here; avoid className on <html> in layout. */
-html {
-  height: 100%;
+:root {
   --background: #f5faf7;
   --foreground: #132019;
   --primary: #9ec7b9;
   --primary-foreground: #0c1813;
   --muted: #e3efe8;
   --muted-foreground: #4a5f54;
-  --border: #cfe0d6;
+  --border: #000000;
 }
 
-html.dark {
+:root.dark {
   --background: #0c1210;
   --foreground: #e5f0eb;
   --primary: #9ec7b9;
   --primary-foreground: #0c1813;
   --muted: #161f1c;
   --muted-foreground: #9cad9f;
-  --border: #26332e;
+  --border: #ffffff;
 }
 
 @theme inline {
